@@ -1,6 +1,5 @@
 {% set version = '2.2.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-growthcleanr
@@ -13,8 +12,7 @@ source:
   sha256: 3b78b3b4d404b0273f95dfd52345332e6656f783313e5bd23faa13c225569772
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
