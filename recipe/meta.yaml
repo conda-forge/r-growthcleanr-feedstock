@@ -1,4 +1,4 @@
-{% set version = "2.2.3" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/growthcleanr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/growthcleanr/growthcleanr_{{ version }}.tar.gz
-  sha256: 86f74f099f3a117b6edcd061f89ffd7c321f68f0ef0d5e7e83bcd35fc5901799
+  sha256: 4a0536f20b9846ad38a583b0cd88f473977e0ff540b2566de05e452de078b1e1
 
 build:
   number: 0
